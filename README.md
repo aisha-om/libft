@@ -68,7 +68,20 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **`ft_putendl_fd`**: Writes a string followed by a newline character to a specified file descriptor.
 * **`ft_putnbr_fd`**: Writes an integer number as text to a specified file descriptor.
 
----
+### 3. Part 3 ⛓️ Linked List Functions 
+
+**A collection of functions designed to create, manipulate, and traverse singly linked lists using the `t_list` structure.**
+
+* **`ft_lstnew`**: Allocates and returns a new node. It initializes the content with the given value and sets the next pointer to `NULL`.
+* **`ft_lstadd_front`**: Adds a new node at the very beginning of the list.
+* **`ft_lstsize`**: Counts and returns the total number of nodes currently in the list.
+* **`ft_lstlast`**: Traverses the list and returns a pointer to the last node.
+* **`ft_lstadd_back`**: Adds a new node at the very end of the list.
+* **`ft_lstdelone`**: Frees the memory of a specific node's content using a custom delete function, then frees the node itself.
+* **`ft_lstclear`**: Deletes and frees a given node and all of its successors, setting the list pointer to `NULL`.
+* **`ft_lstiter`**: Iterates through the list and applies a custom function to the content of each node.
+* **`ft_lstmap`**: Iterates through the list, applies a function to each node's content to create a new list, and handles clean-up if an allocation fails.
+
 
 ## Resources & AI Usage
 
