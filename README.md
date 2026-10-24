@@ -28,6 +28,8 @@ To use `libft` in your own programs or test it manually with a custom `main.c` f
 cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 ./test_program
 
+---
+
 ## Libc Functions
 
 ### 1. Part 1 - Libc Functions
@@ -82,6 +84,7 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **`ft_lstiter`**: Iterates through the list and applies a custom function to the content of each node.
 * **`ft_lstmap`**: Iterates through the list, applies a function to each node's content to create a new list, and handles clean-up if an allocation fails.
 
+---
 
 ## Resources & AI Usage
 
@@ -91,6 +94,8 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **Community & Troubleshooting:** Stack Overflow for exploring common debugging hurdles, edge cases, and segmentation fault troubleshooting.
 * **Video Tutorials:** A wide range of programming tutorials on YouTube, including detailed programming walkthroughs that helped break down complex memory management and pointer concepts.
 * **Testing & Verification:** Community-driven testing references and units used for verifying edge cases and memory leak behavior.
+
+---
 
 ### AI Usage
 During the development of this project, AI was utilized strictly as a conceptual technical reference and collaborative mentor. Specifically, AI helped clarify low-level pointer arithmetic, review Makefile rule structures to prevent relinking issues, and understand edge case behaviors (such as handling `NULL` terminators in `ft_split` or memory management in `ft_lstmap`). All actual code implementations, debugging, and structural decisions were personally written, tested, and understood.
