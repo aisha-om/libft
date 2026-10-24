@@ -26,13 +26,14 @@ Your Makefile includes the following standard rules:
 To use `libft` in your own programs or test it manually with a custom `main.c` file, compile your test file by linking it directly against your library:
 ```bash
 cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
-./test_program
+./test_program 
+```
 
----
 
-## Libc Functions
 
-### 1. Part 1 - Libc Functions
+## **Libc Functions**
+
+### **1. Part 1 - Libc Functions**
 * **`ft_isalpha`**: Checks if a character is an alphabetic letter (A-Z or a-z).
 * **`ft_isdigit`**: Checks if a character is a digit (0-9).
 * **`ft_isalnum`**: Checks if a character is alphanumeric (letter or digit).
@@ -57,7 +58,7 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **`ft_calloc`**: Allocates heap memory for an array and initializes all bytes to zero.
 * **`ft_strdup`**: Allocates fresh memory and duplicates a given string into it.
 
-### 2. Part 2 - Additional Functions
+### **2. Part 2 - Additional Functions**
 * **`ft_substr`**: Extracts a smaller substring out of a string, starting at a given index with a maximum length.
 * **`ft_strjoin`**: Allocates a new string and joins two strings (`s1` and `s2`) together end-to-end.
 * **`ft_strtrim`**: Removes specific unwanted characters from both the beginning and the end of a string.
@@ -70,10 +71,7 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **`ft_putendl_fd`**: Writes a string followed by a newline character to a specified file descriptor.
 * **`ft_putnbr_fd`**: Writes an integer number as text to a specified file descriptor.
 
-### 3. Part 3 ⛓️ Linked List Functions 
-
-**A collection of functions designed to create, manipulate, and traverse singly linked lists using the `t_list` structure.**
-
+### **3. Part 3 ⛓️ Linked List Functions** 
 * **`ft_lstnew`**: Allocates and returns a new node. It initializes the content with the given value and sets the next pointer to `NULL`.
 * **`ft_lstadd_front`**: Adds a new node at the very beginning of the list.
 * **`ft_lstsize`**: Counts and returns the total number of nodes currently in the list.
@@ -84,18 +82,16 @@ cc -Wall -Wextra -Werror test_file.c libft.a -o test_program
 * **`ft_lstiter`**: Iterates through the list and applies a custom function to the content of each node.
 * **`ft_lstmap`**: Iterates through the list, applies a function to each node's content to create a new list, and handles clean-up if an allocation fails.
 
----
+
 
 ## Resources & AI Usage
 
-### Resources
+### **Resources**
 * **Official Manuals & Documentation:** Unix manual pages (`man`) for C standard library functions, and the official 42 Amman project guidelines and Norminette documentation.
 * **Online Coding & Reference Platforms:** GeeksforGeeks and W3Schools for logic explanations, syntax refreshers, and core programming concept reviews.
 * **Community & Troubleshooting:** Stack Overflow for exploring common debugging hurdles, edge cases, and segmentation fault troubleshooting.
 * **Video Tutorials:** A wide range of programming tutorials on YouTube, including detailed programming walkthroughs that helped break down complex memory management and pointer concepts.
 * **Testing & Verification:** Community-driven testing references and units used for verifying edge cases and memory leak behavior.
 
----
-
-### AI Usage
+### **AI Usage**
 During the development of this project, AI was utilized strictly as a conceptual technical reference and collaborative mentor. Specifically, AI helped clarify low-level pointer arithmetic, review Makefile rule structures to prevent relinking issues, and understand edge case behaviors (such as handling `NULL` terminators in `ft_split` or memory management in `ft_lstmap`). All actual code implementations, debugging, and structural decisions were personally written, tested, and understood.
