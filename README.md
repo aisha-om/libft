@@ -1,5 +1,5 @@
 # libft
-*This project has been created as part of the 42 curriculum by aabufarw
+*This project has been created as part of the 42 curriculum by aabufarw*
 
 ## Description
 Libft is our very first coding project at 42. The main goal is to build a custom static C library (`libft.a`) from scratch. Instead of relying on standard C library functions, we get to reimplement them ourselves, alongside a bunch of extra utility functions and linked list operations. 
