@@ -6,7 +6,7 @@
 /*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/12 20:38:17 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/27 12:44:32 by aabufarw        ###   ########.fr        */
+/*   Updated: 2026/10/20 17:25:53 by aabufarw        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,40 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
+	size_t				dlen;
+	size_t				slen;
+	size_t				i;
 	unsigned char		*dest;
 	const unsigned char	*srcc;
 
-	if (!dst && !src)
-		return (dst);
 	srcc = (const unsigned char *) src;
 	dest = (unsigned char *) dst;
+	dlen = ft_strlen(dst);
+	slen = ft_strlen(src);
 	if (dest == srcc || len == 0)
 		return (dst);
-	if (dest < srcc)
+	i = 0;
+	while (len-- > 0)
 	{
-		while (len--)
-			*dest++ = *srcc++;
+		if (dlen > slen)
+		{
+			dest[i] = srcc[i];
+			i++;
+		}
+		else
+			dest[len] = srcc[len];
 	}
-	else if (dest > srcc)
-	{
-		dest += len;
-		srcc += len;
-		while (len--)
-			*--dest = *--srcc;
-	}
-	return (dst);
+	return (dest);
 }
 /*int main()
 {
 char dest[20] = "Hello, World!";
 const char *src = "42 School";
 size_t n = 5;
+
 printf("Before memmove: %s\n", dest);
 ft_memmove(dest, src, n);
 printf("After memmove: %s\n", dest);
+
 return 0;
 }*/

@@ -35,7 +35,7 @@ char	*ft_strtrim(char const *tobetrimmed, char const *toremove)
 	start = 0;
 	while (tobetrimmed[start] && ft_char_in_set(tobetrimmed[start], toremove))
 		start++;
-	end = ft_strlen((char *) tobetrimmed);
+	end = ft_strlen(tobetrimmed);
 	while (end > start && ft_char_in_set(tobetrimmed[end - 1], toremove))
 		end--;
 	trimmed = (char *) malloc(end - start + 1);
@@ -51,16 +51,18 @@ char	*ft_strtrim(char const *tobetrimmed, char const *toremove)
 	trimmed[i] = '\0';
 	return (trimmed);
 }
-/*int main()
+
+/*int	main(void)
 {
-const char *str = "   Hello, World!   ";
-const char *set = " ";
-char *trimmed = ft_strtrim(str, set);
+const char	*str = "+-+-+++++-Hello, World!+--jhgjgkk+-";
+const char	*set = "+-";
+char		*trimmed = ft_strtrim(str, set);
+
 if (trimmed)
 {
 printf("Original: '%s'\n", str);
 printf("Trimmed: '%s'\n", trimmed);
 free(trimmed);
 }
-return 0;
+return (0);
 }*/

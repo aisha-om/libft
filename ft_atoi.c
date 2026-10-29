@@ -6,7 +6,7 @@
 /*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 12:59:59 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/24 13:20:04 by aabufarw         ###   ########.fr       */
+/*   Updated: 2026/10/20 16:48:35 by aabufarw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 		sum = (sum * 10) + (str[i] - '0');
 		i++;
 	}
-	return (sign * (int) sum);
+	return (sign * sum);
 }
 /*int main()
 {

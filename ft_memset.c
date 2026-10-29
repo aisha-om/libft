@@ -6,7 +6,7 @@
 /*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/12 19:46:06 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/27 12:04:47 by aabufarw        ###   ########.fr        */
+/*   Updated: 2026/10/20 11:55:49 by aabufarw        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,10 @@ void	*ft_memset(void *ptr, int value, size_t len)
 		str[i] = t;
 		i++;
 	}
-	return ((void *) str);
+	return (str);
 }
-
-/*int	main(void)
+/*int main ()
 {
-unsigned char	mystring[] = "my name is aisha";
-
-printf(" the result is %s ", (char *) ft_memset(mystring, '8', 10));
+unsigned char *mystring = "my name is aisha";
+printf(" the result is %d ",ft_memset(mystring , '8' , 10));
 }*/

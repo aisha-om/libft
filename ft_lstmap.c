@@ -34,27 +34,22 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (n_list);
 }
-/*int main()
-{
-t_list *head = NULL;
-t_list *new_node1 = (t_list *)malloc(sizeof(t_list));
-new_node1->content = "Hello, ";
-new_node1->next = NULL;
 
-t_list *new_node2 = (t_list *)malloc(sizeof(t_list));
-new_node2->content = "World!";
-new_node2->next = NULL;
+/*int	main(void)
+{
+t_list	*head = NULL;
+t_list	*new_node1 = ft_lstnew(ft_strdup("Hello, "));
+t_list	*new_node2 = ft_lstnew(ft_strdup("world!"));
 
 ft_lstadd_back(&head, new_node1);
 ft_lstadd_back(&head, new_node2);
+t_list	*last_node = ft_lstmap(head, (void *) ft_strdup, free);
 
-t_list *last_node = ft_lstlast(head);
 if (last_node)
-printf("Last node content: %s\n", (char *)last_node->content);
+printf("Last node content: %s\n", (char *) last_node->content);
 else
 printf("List is empty.\n");
-
-free(new_node1);
-free(new_node2);
-return 0;
+ft_lstclear(&head, free);
+ft_lstclear(&last_node, free);
+return (0);
 }*/

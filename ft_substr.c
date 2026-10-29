@@ -6,7 +6,7 @@
 /*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 14:35:44 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/26 13:51:04 by aabufarw        ###   ########.fr        */
+/*   Updated: 2026/10/20 17:01:47 by aabufarw        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
+	s_len = ft_strlen(s);
 	if (!s)
 		return (NULL);
-	s_len = ft_strlen(s);
 	if (start >= s_len)
 		return (ft_strdup(""));
 	if (len > s_len - start)
