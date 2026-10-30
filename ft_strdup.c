@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 13:35:04 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/19 10:53:10 by aabufarw         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strdup.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/14 13:35:04 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 17:09:12 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,22 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/*int	main(void)
+{
+const char	*original = "Hello, World!";
+char		*duplicate;
+
+duplicate = ft_strdup(original);
+if (duplicate != NULL)
+{
+printf("Original: %s\n", original);
+printf("Duplicate: %s\n", duplicate);
+free(duplicate);
+}
+else
+{
+printf("Memory allocation failed.\n");
+}
+return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 14:51:00 by  aabufarw        #+#    #+#              */
-/*   Updated: 2026/10/17 21:32:24 by  aabufarw       ###   ########.fr        */
+/*   Updated: 2026/10/30 17:14:07 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+/*void
+ft_print_indexed_char(unsigned int index, char * c)
+{
+printf("Index: %u, Character: %c\n", index, *c);
+}
+
+int	main(void)
+{
+char	str[] = "Hello, World!";
+
+ft_striteri(str, ft_print_indexed_char);
+return (0);
+}*/

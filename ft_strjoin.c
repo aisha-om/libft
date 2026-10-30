@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strjoin.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/16 14:36:35 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:57:47 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/16 14:36:35 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 17:14:55 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,17 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_memcpy(joined + len1, s2, len2 + 1);
 	return (joined);
 }
-/*int main()
+
+/*int	main(void)
 {
-const char *s1 = "Hello, ";
-const char *s2 = "World!";
-char *result = ft_strjoin(s1, s2);
+const char	*s1 = "Hello, ";
+const char	*s2 = "World!";
+char		*result = ft_strjoin(s1, s2);
+
 if (result)
 {
 printf("Joined string: %s\n", result);
 free(result);
 }
-return 0;
+return (0);
 }*/

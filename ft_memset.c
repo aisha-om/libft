@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_memset.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/12 19:46:06 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:55:49 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/12 19:46:06 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 17:04:17 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,10 @@ void	*ft_memset(void *ptr, int value, size_t len)
 	}
 	return (str);
 }
-/*int main ()
+
+/*int	main(void)
 {
-unsigned char *mystring = "my name is aisha";
-printf(" the result is %d ",ft_memset(mystring , '8' , 10));
+unsigned char	mystring[] = "my name is aisha";
+
+printf(" the result is %s\n", (char *) ft_memset(mystring, '0', 10));
 }*/

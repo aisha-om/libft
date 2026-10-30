@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strnstr.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/16 17:00:16 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 14:12:53 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/16 17:00:16 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 18:29:32 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,17 @@ char	*ft_strnstr(const char *str, const char *sub, size_t len)
 	}
 	return (NULL);
 }
-/*int main()
-{
-const char *str = "Hello, World!";
-const char *sub = "World";
-size_t len = 12;
 
-char *result = ft_strnstr(str, sub, len);
+/*int	main(void)
+{
+const char	*str = "Hello, World!";
+const char	*sub = "World";
+size_t		len = 12;
+char		*result = ft_strnstr(str, sub, len);
+
 if (result)
 printf("Found substring: %s\n", result);
 else
 printf("Substring not found.\n");
-
-return 0;
+return (0);
 }*/

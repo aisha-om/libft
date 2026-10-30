@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_substr.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/16 14:35:44 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 17:01:47 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/16 14:35:44 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 20:20:30 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-/*int main(void)
+
+/*int	main(void)
 {
-char *result = ft_substr("Hello, World!", 7, 5);
+char	*result = ft_substr("Hello, World!", 7, 5);
+
 if (result)
 {
 printf("Substring: %s\n", result);
 free(result);
 }
-return 0;
+return (0);
 }*/

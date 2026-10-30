@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/17 15:06:33 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/20 11:58:01 by aabufarw         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strncmp.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/17 15:06:33 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 18:28:01 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,14 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 	return (0);
 }
-/*int main(void)
+
+/*int	main(void)
 {
-const char *str1 = "Hello, World!";
-const char *str2 = "Hello, World!";
-size_t n = 5;
+const char	*str1 = "Hello, World!";
+const char	*str2 = "Hello, World!";
+size_t		n = 5;
+int			result = ft_strncmp(str1, str2, n);
 
-int result = ft_strncmp(str1, str2, n);
-if (result == 0)
-write(1, "Strings are equal up to n characters.\n", 39);
-else
-write(1, "Strings are not equal up to n characters.\n", 43);
-
+printf("the result  %d of comparing characters of \"%s\" and \"%s\":\n", result, str1, str2);
 return (0);
 }*/

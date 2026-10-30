@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/10 11:11:51 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/20 11:58:07 by aabufarw         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strrchr.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/10 11:11:51 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 18:31:50 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *) s);
 	return (last);
 }
-/*int main (void)
+
+/*int	main(void)
 {
-char *main = ft_strrchr( "my name is aisha" , 'a');
-char *original = strrchr( "my name is aisha" , 'a');
-printf("%s main \n %s original \n", main ,original );
+char	*main = ft_strrchr("my name is aisha", 'a');
+
+printf("%s\n", main);
 }*/
