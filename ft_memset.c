@@ -6,7 +6,7 @@
 /*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/12 19:46:06 by  aabufarw        #+#    #+#              */
-/*   Updated: 2026/10/30 17:04:17 by  aabufarw       ###   ########.fr        */
+/*   Updated: 2026/10/31 00:18:02 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memset(void *ptr, int value, size_t len)
 		str[i] = t;
 		i++;
 	}
-	return ((void *)str);
+	return (str);
 }
 
 /*int	main(void)
