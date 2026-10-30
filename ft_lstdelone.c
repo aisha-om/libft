@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_lstdelone.c                                    :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/19 16:07:54 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:55:09 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/19 16:07:54 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 14:17:27 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,27 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-/*int main()
+
+/*int	main(void)
 {
-t_list *node = (t_list *)malloc(sizeof(t_list));
-node->content = "Hello, World!";
-node->next = NULL;
+t_list	*head = NULL;
+t_list	*new_node1 = ft_lstnew(ft_strdup("1"));
+t_list	*new_node2 = ft_lstnew(ft_strdup("2"));
+t_list	*new_node3 = ft_lstnew(ft_strdup("3"));
 
-ft_lstdelone(node, free);
+ft_lstadd_back(&head, new_node1);
+ft_lstadd_back(&head, new_node2);
+ft_lstadd_back(&head, new_node3);
+head = new_node2;
+ft_lstdelone(new_node1, free);
+t_list	*current = head;
 
-return 0;
+while (current)
+{
+printf("%s", (char *) current->content);
+current = current->next;
+}
+printf("\n");
+ft_lstclear(&head, free);
+return (0);
 }*/

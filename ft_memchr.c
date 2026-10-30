@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 15:57:32 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/20 11:55:36 by aabufarw         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memchr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/19 15:57:32 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 14:50:27 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*int main ()
+
+/*int	main(void)
 {
-const char str[] = "aisha.omar";
-const char ch = '.';
-char *ret;
+const char	str[] = "aisha.omar";
+const char	ch = '.';
+char		*ret;
 
-ret = ft_memchr(str, ch, strlen(str));
-
+ret = ft_memchr(str, ch, ft_strlen(str));
 printf("String after %c is - %s\n", ch, ret);
-return(0);
+return (0);
 }*/

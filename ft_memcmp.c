@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_memcmp.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/19 16:03:35 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:55:40 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/19 16:03:35 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 14:52:52 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,20 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int	main(void)
+{
+const char	str1[] = "Hello, World!";
+const char	str2[] = "Hello, 42!";
+int			result;
+
+result = ft_memcmp(str1, str2, 7);
+printf("Result of ft_memcmp: %d\n", result);
+if (result < 0)
+printf("str1 is less than str2\n");
+else if (result > 0)
+printf("str1 is greater than str2\n");
+else
+printf("str1 is equal to str2\n");
+return (0);
+}*/

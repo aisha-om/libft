@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_lstnew.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/13 21:57:41 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:55:26 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/13 21:57:41 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 14:44:46 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,22 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-/*int main()
+
+/*int	main(void)
 {
-void *content = "Hello, World!";
-t_list *new_node = ft_lstnew(content);
+void	*content = "Hello, World!";
+t_list	*new_node = ft_lstnew(content);
 
 if (new_node)
 {
 printf("New node created successfully.\n");
-printf("Content: %s\n", (char *)new_node->content);
-printf("Next: %p\n", (void *)new_node->next);
+printf("Content: %s\n", (char *) new_node->content);
+printf("Next: %p\n", (void *) new_node->next);
 free(new_node);
 }
 else
 {
 printf("Failed to create new node.\n");
 }
-
-return 0;
+return (0);
 }*/

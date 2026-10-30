@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_lstadd_front.c                                 :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/13 22:05:35 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/10/20 11:55:02 by aabufarw        ###   ########.fr        */
+/*   Created: 2026/10/13 22:05:35 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 14:03:11 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,25 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-/*int main()
+
+/*int	main(void)
 {
-t_list *head = NULL;
-t_list *new_node = (t_list *)malloc(sizeof(t_list));
-new_node->content = "Hello, World!";
-new_node->next = NULL;
+t_list	*head = NULL;
+t_list	*new_node1 = ft_lstnew(ft_strdup("1"));
+t_list	*new_node2 = ft_lstnew(ft_strdup("2"));
+t_list	*new_node3 = ft_lstnew(ft_strdup("3"));
 
-ft_lstadd_front(&head, new_node);
-)
-printf("%s\n", (char *)head->content);
+ft_lstadd_back(&head, new_node1);
+ft_lstadd_back(&head, new_node2);
+ft_lstadd_front(&head, new_node3);
+t_list	*current = head;
 
-free(new_node);
-return 0;
+while (current)
+{
+printf("%s", (char *) current->content);
+current = current->next;
+}
+printf("\n");
+ft_lstclear(&head, free);
+return (0);
 }*/

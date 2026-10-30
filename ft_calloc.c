@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aabufarw <aabufarw@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 13:33:50 by aabufarw          #+#    #+#             */
-/*   Updated: 2026/10/20 11:54:35 by aabufarw         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_calloc.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/14 13:33:50 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/10/30 13:47:23 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,24 +28,21 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset(ptr, 0, total_size);
 	return (ptr);
 }
-/*int main()
+
+/*int	main(void)
 {
-size_t numb = 5;
-size_t size = sizeof(int);
-int *arr = (int *)ft_calloc(numb, size);
+size_t	numb = 5;
+size_t	size = sizeof(int);
+int		*arr = (int *) ft_calloc(numb, size);
 
 if (arr == NULL)
-{
 printf("Memory allocation failed\n");
-return 1;
-}
-
+ft_memset(arr, 0, numb * size);
 for (size_t i = 0; i < numb; i++)
 {
 printf("%d ", arr[i]);
 }
 printf("\n");
-
 free(arr);
-return 0;
+return (0);
 }*/
